@@ -1,0 +1,8 @@
+{
+  "_note": "Sample scrutiny officers for the demo. Invented names.",
+  "officers": [
+    {"name": "K. Saravanan", "role": "Scrutiny officer, Southern region"},
+    {"name": "R. Deepika", "role": "Scrutiny officer, Southern region"},
+    {"name": "M. Farook", "role": "Scrutiny officer, Southern region"}
+  ]
+}

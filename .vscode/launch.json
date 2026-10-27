@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Pramaan: run server (debug)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": ["app.main:app", "--port", "8000"],
+      "cwd": "${workspaceFolder}/backend",
+      "windows": { "python": "${workspaceFolder}/backend/.venv/Scripts/python.exe" },
+      "python": "${workspaceFolder}/backend/.venv/bin/python",
+      "justMyCode": true
+    }
+  ]
+}

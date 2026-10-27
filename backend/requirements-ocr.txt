@@ -1,0 +1,2 @@
+# Optional: reads scanned images. Runs the PaddleOCR models through ONNX Runtime.
+rapidocr_onnxruntime>=1.3

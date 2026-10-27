@@ -1,0 +1,135 @@
+{
+  "_note": "Stand-in for issuer portals (DigiLocker, state fire service). Demo data only.",
+  "prefixes": {
+    "FRS": "SFRS"
+  },
+  "issuers": {
+    "SFRS": {
+      "name": "State Fire and Rescue Services (sample issuer)",
+      "public_key": "0PYRDaRZpw7CsnxI76Ipfo7YMHxRi6FpsK3wDJ+7YaU=",
+      "officers": [
+        {
+          "name": "P. Anand",
+          "post": "Divisional Fire Officer, Madurai",
+          "from": "2022-01-01",
+          "to": "2030-12-31"
+        },
+        {
+          "name": "V. Kannan",
+          "post": "Divisional Fire Officer, Nilgiris",
+          "from": "2023-04-01",
+          "to": "2030-12-31"
+        },
+        {
+          "name": "R. Selvi",
+          "post": "Divisional Fire Officer, Tiruvannamalai",
+          "from": "2024-01-01",
+          "to": "2030-12-31"
+        },
+        {
+          "name": "M. Raja",
+          "post": "Divisional Fire Officer, Vellore",
+          "from": "2020-06-01",
+          "to": "2030-12-31"
+        },
+        {
+          "name": "K. Ravi",
+          "post": "Divisional Fire Officer, Cuddalore",
+          "from": "2021-06-01",
+          "to": "2026-05-31"
+        },
+        {
+          "name": "S. Meena",
+          "post": "Divisional Fire Officer, Cuddalore",
+          "from": "2026-06-01",
+          "to": "2030-12-31"
+        },
+        {
+          "name": "A. Joseph",
+          "post": "Divisional Fire Officer, Thanjavur",
+          "from": "2021-01-01",
+          "to": "2030-12-31"
+        },
+        {
+          "name": "D. Prakash",
+          "post": "Divisional Fire Officer, Tiruchirappalli",
+          "from": "2022-07-01",
+          "to": "2030-12-31"
+        },
+        {
+          "name": "N. Latha",
+          "post": "Divisional Fire Officer, Coimbatore",
+          "from": "2023-01-01",
+          "to": "2030-12-31"
+        }
+      ]
+    }
+  },
+  "certificates": {
+    "SFRS": {
+      "FRS/TRY/2026/0518": {
+        "status": "valid",
+        "issued_to": "Marutham College of Engineering",
+        "issued": "2026-02-16",
+        "valid": "2029-02-28",
+        "signer": "D. Prakash"
+      },
+      "FRS/CBE/2026/0675": {
+        "status": "valid",
+        "issued_to": "Noyyal Institute of Technology",
+        "issued": "2026-04-07",
+        "valid": "2029-04-30",
+        "signer": "N. Latha"
+      },
+      "FRS/TNJ/2025/1102": {
+        "status": "valid",
+        "issued_to": "Kollidam Engineering College",
+        "issued": "2025-09-09",
+        "valid": "2028-09-30",
+        "signer": "A. Joseph"
+      },
+      "FRS/OTY/2026/0142": {
+        "status": "valid",
+        "issued_to": "Nilgiri Ridge Institute of Management",
+        "issued": "2026-03-12",
+        "valid": "2029-03-31",
+        "signer": "V. Kannan"
+      },
+      "FRS/VLR/2026/0230": {
+        "status": "valid",
+        "issued_to": "Palar Polytechnic College",
+        "issued": "2026-01-20",
+        "valid": "2029-01-31",
+        "signer": "M. Raja"
+      },
+      "FRS/TVM/2025/0811": {
+        "status": "valid",
+        "issued_to": "Javadhu Hills Technical Campus",
+        "issued": "2025-07-03",
+        "valid": "2027-06-30",
+        "signer": "R. Selvi"
+      },
+      "FRS/MDU/2024/3391": {
+        "status": "valid",
+        "issued_to": "Vaigai Institute of Technology",
+        "issued": "2024-04-02",
+        "valid": "2027-03-31",
+        "signer": "P. Anand"
+      },
+      "FRS/SLM/2026/0904": {
+        "status": "valid",
+        "issued_to": "Kaveri Institute of Engineering",
+        "issued": "2026-10-04",
+        "valid": "2029-10-31",
+        "signer": "N. Latha"
+      },
+      "FRS/KRR/2026/0213": {
+        "status": "valid",
+        "issued_to": "Amaravathi College of Engineering",
+        "issued": "2026-03-12",
+        "valid": "2026-06-30",
+        "signer": "D. Prakash"
+      }
+    }
+  }
+}

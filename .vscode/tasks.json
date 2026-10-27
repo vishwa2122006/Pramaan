@@ -1,0 +1,48 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "1. Setup (first time only)",
+      "type": "shell",
+      "options": { "cwd": "${workspaceFolder}/backend" },
+      "windows": {
+        "command": "python -m venv .venv; .venv\\Scripts\\python -m pip install --upgrade pip; .venv\\Scripts\\python -m pip install -r requirements.txt; .venv\\Scripts\\python -m pip install -r requirements-ocr.txt; .venv\\Scripts\\python seed\\seed.py"
+      },
+      "command": "python3 -m venv .venv && .venv/bin/pip install -r requirements.txt && (.venv/bin/pip install -r requirements-ocr.txt || true) && .venv/bin/python seed/seed.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "2. Start Pramaan",
+      "type": "shell",
+      "options": { "cwd": "${workspaceFolder}/backend" },
+      "windows": { "command": ".venv\\Scripts\\python -m uvicorn app.main:app --port 8000 --reload" },
+      "command": ".venv/bin/python -m uvicorn app.main:app --port 8000 --reload",
+      "isBackground": true,
+      "problemMatcher": [],
+      "group": { "kind": "build", "isDefault": true }
+    },
+    {
+      "label": "Reset sample data",
+      "type": "shell",
+      "options": { "cwd": "${workspaceFolder}/backend" },
+      "windows": { "command": ".venv\\Scripts\\python seed\\seed.py" },
+      "command": ".venv/bin/python seed/seed.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Frontend: dev server (optional, for editing the UI)",
+      "type": "shell",
+      "options": { "cwd": "${workspaceFolder}/frontend" },
+      "command": "npm install; npm run dev",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Frontend: build into backend/static",
+      "type": "shell",
+      "options": { "cwd": "${workspaceFolder}/frontend" },
+      "command": "npm install; npm run build",
+      "problemMatcher": []
+    }
+  ]
+}

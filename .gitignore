@@ -1,0 +1,18 @@
+# Python
+backend/.venv/
+__pycache__/
+*.pyc
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Runtime data: database, uploads, reports and the PRIVATE signing key / HTTPS cert
+backend/storage/
+*.db
+*.pem
+*.key
+
+# Editor / OS
+.DS_Store
+Thumbs.db
